@@ -1,0 +1,60 @@
+<!Doctype html>
+<html lang=pl>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zabytki</title>
+<link rel="shortcut icon" href=../foto/herb.png>
+<link rel="stylesheet" type="text/css" href="../style/zabytki.css">
+<link rel="stylesheet" type="text/css" href="../gallery/lightgallery.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    <div class=menu>
+        <div class=menu2>
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" class="active"><img class="logo" src="../foto/herb.png" alt="logo" ></a>
+                <a href="media.html">Media</a>
+                <a href="historia.html">Historia</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class=menuf></div>
+    </div>
+    <div>
+        <h2 class="zab1">Zabytki</h2>
+        <ol class=lista>
+            <li>Muzeum Vincenta van Gogha</li>
+            <li>Rijksmuseum</li>
+            <li>Dom Anny Frank</li>
+            <li>Plac Dam</li>
+        </ol>
+    </div>
+    <div><h2>Galeria zabytków</h2></div>
+    <div id="lightgallery">
+<a href="../foto/van.jpg"><img class="foto" src="../foto/van.jpg" ></a>
+<a href="../foto/rik.jpg"><img class="foto" src="../foto/rik.jpg" ></a>
+<a href="../foto/anne.jpg"><img class="foto" src="../foto/anne.jpg" ></a>
+<a href="../foto/dam.jpg"><img class="foto" src="../foto/dam.jpg" ></a>
+</div>
+<script src="../gallery/lightgallery.js"></script>
+<script src="../gallery/lg-thumbnail.min.js"></script>
+<script src="../gallery/lg-fullscreen.min.js"></script>
+<script>
+    lightGallery(document.getElementById('lightgallery')); 
+</script>
+<div class=stopka><footer>Arkadiusz Burszta 2tb</footer></div>
+</body>
+</html>

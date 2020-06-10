@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang=pl>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media</title>
+<link rel="shortcut icon" href=../foto/herb.png>
+<link rel="stylesheet" type="text/css" href="../style/media.css">
+<link rel="stylesheet" type="text/css" href="../gallery/lightgallery.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    <div class=menu>
+        <div class=menu2>
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html" class="active"><img class="logo" src="../foto/herb.png" alt="logo" ></a>
+                <a href="zabytki.html">Zabytki</a>
+                <a href="historia.html">Historia</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class=menuf></div>
+    </div>
+    <div><h2>Galeria</h2></div>
+<div id="lightgallery">
+<a href="../foto/1.jpg"><img class="foto" src="../foto/11.png" ></a>
+<a href="../foto/2.jpg"><img class="foto" src="../foto/21.png" ></a>
+<a href="../foto/3.jpg"><img class="foto" src="../foto/31.png" ></a>
+<a href="../foto/4.jpg"><img class="foto" src="../foto/41.png" ></a>
+<a href="../foto/5.jpg"><img class="foto" src="../foto/51.png" ></a>
+</div>
+<script src="../gallery/lightgallery.js"></script>
+<script src="../gallery/lg-thumbnail.min.js"></script>
+<script src="../gallery/lg-fullscreen.min.js"></script>
+<script>
+    lightGallery(document.getElementById('lightgallery')); 
+</script>
+<div id="media">
+    <h2>Film</h2>
+    <div class="film">
+        <iframe src="https://www.youtube.com/embed/n_y-WU2ok6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h2>Utwór muzyczny - Imagine Dragons: Amsterdam</h2>
+    <div id="muzyka">
+        <audio controls>
+            <source src="../audio/Imagine_Dragons_-_Amsterdam.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    </div>
+<div class=stopka><footer>Arkadiusz Burszta 2tb</footer></div>
+</body>
+</html>
