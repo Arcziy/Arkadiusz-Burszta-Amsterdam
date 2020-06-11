@@ -55,9 +55,45 @@
 } 
         </script>
         <h2>Pochodzenie nazwy miasta</h2>
-        Nazwa miasta oznacza – tamę (z holend. „dam”) na rzece Amstel (pierwotnie: Amsteldam). Pierwszy raz nazwa ta została zapisana po łacinie w 1275 roku przez hrabiego Florisa V – homines manentes apud Amestelledamme (ludzie mieszkający w pobliżu Amestelledamme). Litera r pojawiła się po raz pierwszy w 1282 roku – Amestelredamme. W 1327 roku hrabia Wilhelm III z Hainaut użył formy Aemsterdam, która najbardziej przypomina dzisiejszą nazwę miasta.
+        <p>Nazwa miasta oznacza –<span id="dots1">...</span><span id="more1">tamę (z holend. „dam”) na rzece Amstel (pierwotnie: Amsteldam). Pierwszy raz nazwa ta została zapisana po łacinie w 1275 roku przez hrabiego Florisa V – homines manentes apud Amestelledamme (ludzie mieszkający w pobliżu Amestelledamme). Litera r pojawiła się po raz pierwszy w 1282 roku – Amestelredamme. W 1327 roku hrabia Wilhelm III z Hainaut użył formy Aemsterdam, która najbardziej przypomina dzisiejszą nazwę miasta.</span></p>
+        <button onclick="myFunction1()" id="myBtn1">Read more</button>
+        <script>
+            function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+} 
+        </script>
         <h2>Herb miasta</h2>
-        Herb Amsterdamu to trzy krzyże św. Andrzeja jeden pod drugim, takie same krzyże znajdują się na fladze miasta, tyle że tam ustawione są one poziomo. Znaczenie tych krzyży nie jest jasne, jednak historycy podejrzewają, iż mają one symbolizować trzy plagi, jakie dotknęły Amsterdam – wodę, ogień i dżumę. Oprócz nich w herbie znajduje się austriacka korona cesarska, którą umieścił tam w 1489 roku król Niemiec Maksymilian I Habsburg (Niderlandy znajdowały się wtedy pod jego panowaniem) – na znak swojego poparcia udzielonego miastu. Lwy w herbie pochodzą z XVI wieku, gdy miasto było częścią Republiki. Po II wojnie światowej, w 1946 roku, za zgodą królowej Wilhelminy, dodano do herbu motto – „Dzielni, Zdecydowani, Miłosierni” (Heldhaftig, Vastberaden, Barmhartig) 
+        <p>Herb Amsterdamu to <span id="dots2">...</span><span id="more2">trzy krzyże św. Andrzeja jeden pod drugim, takie same krzyże znajdują się na fladze miasta, tyle że tam ustawione są one poziomo. Znaczenie tych krzyży nie jest jasne, jednak historycy podejrzewają, iż mają one symbolizować trzy plagi, jakie dotknęły Amsterdam – wodę, ogień i dżumę. Oprócz nich w herbie znajduje się austriacka korona cesarska, którą umieścił tam w 1489 roku król Niemiec Maksymilian I Habsburg (Niderlandy znajdowały się wtedy pod jego panowaniem) – na znak swojego poparcia udzielonego miastu. Lwy w herbie pochodzą z XVI wieku, gdy miasto było częścią Republiki. Po II wojnie światowej, w 1946 roku, za zgodą królowej Wilhelminy, dodano do herbu motto – „Dzielni, Zdecydowani, Miłosierni” (Heldhaftig, Vastberaden, Barmhartig)</span></p>
+        <button onclick="myFunction2()" id="myBtn2">Read more</button>
+        <script>
+            function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+} 
+        </script>
         <div class=herb1><img id="herb" src="../foto/herb.png"></div>
         <br>
     </div>

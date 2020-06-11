@@ -51,14 +51,14 @@ div.topnav{
   .topnav .icon {
 	display: none;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1023px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 	  float: right;
 	  display: block;
 	}
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1023px) {
 	.topnav.responsive {position: relative;}
 	.topnav.responsive .icon {
 	  position: absolute;
@@ -107,7 +107,20 @@ td{
 	border-width: 2px; 
 	border-color: #4caf50;
 }
-#more {display: none;}
+#more {display: inline;}
+#more1 {display: inline;}
+#more2 {display: inline;}
+#myBtn{display: none; margin-left: auto; margin-right: auto;}
+#myBtn1{display: none; margin-left: auto; margin-right: auto;}
+#myBtn2{display: none; margin-left: auto; margin-right: auto;}
+@media only screen and (min-width: 320px) and (max-width: 720px){
+	#myBtn{display: block;}
+	#myBtn1{display: block;}
+	#myBtn2{display: block;}
+	#more {display: none;}
+	#more1 {display: none;}
+	#more2 {display: none;}
+}
   div.stopka{
 	font-size:20px;
 	background-color:#333;

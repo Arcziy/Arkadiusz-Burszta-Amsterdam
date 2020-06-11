@@ -41,8 +41,26 @@
     </div>
     <div class=podstawa>
         <h2>Podstawowe informacje</h2>
-        Amsterdam – miasto i stolica konstytucyjna Holandii. Większość instytucji rządowych oraz przedstawicielstw obcych państw znajduje się w Hadze.Amsterdam położony jest nad rzekami Amstel i IJ oraz licznymi kanałami (160) – trzy największe w kształcie półksiężyców usytuowane niemalże równolegle do siebie to: Herengracht (położony najbardziej centralnie), Keizersgracht i Prinsengracht. Z nimi łączą się promieniście mniejsze kanały, tworząc sieć wodną dzielącą miasto na liczne wyspy, dlatego Amsterdam nazywany jest często Wenecją Północy. Amsterdam położony jest częściowo poniżej poziomu morza. Jest największym miastem Holandii, dużym ośrodkiem przemysłowym, drugim po Rotterdamie portem handlowym Holandii (dostępnym dla statków oceanicznych), połączonym kanałami z Morzem Północnym i Renem. Ważny ośrodek naukowy (2 uniwersytety, Królewski Instytut Tropikalny) i kulturalny; jest też ważnym ośrodkiem turystycznym z licznymi muzeami (m.in. Rijksmuseum, Muzeum Vincenta van Gogha, Rembrandthuis, Muzeum Tropiku); zabytkami i bogatymi ogrodami botanicznymi. Centrum miasta wraz z kanałami powstało w przeważającej części w XVII wieku (złoty wiek w historii Holandii) 
+        <p>Amsterdam – miasto i stolica <span id="dots">...</span><span id="more">konstytucyjna Holandii. Większość instytucji rządowych oraz przedstawicielstw obcych państw znajduje się w Hadze.Amsterdam położony jest nad rzekami Amstel i IJ oraz licznymi kanałami (160) – trzy największe w kształcie półksiężyców usytuowane niemalże równolegle do siebie to: Herengracht (położony najbardziej centralnie), Keizersgracht i Prinsengracht. Z nimi łączą się promieniście mniejsze kanały, tworząc sieć wodną dzielącą miasto na liczne wyspy, dlatego Amsterdam nazywany jest często Wenecją Północy. Amsterdam położony jest częściowo poniżej poziomu morza. Jest największym miastem Holandii, dużym ośrodkiem przemysłowym, drugim po Rotterdamie portem handlowym Holandii (dostępnym dla statków oceanicznych), połączonym kanałami z Morzem Północnym i Renem. Ważny ośrodek naukowy (2 uniwersytety, Królewski Instytut Tropikalny) i kulturalny; jest też ważnym ośrodkiem turystycznym z licznymi muzeami (m.in. Rijksmuseum, Muzeum Vincenta van Gogha, Rembrandthuis, Muzeum Tropiku); zabytkami i bogatymi ogrodami botanicznymi. Centrum miasta wraz z kanałami powstało w przeważającej części w XVII wieku (złoty wiek w historii Holandii)</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
     </div>
+    <script>
+        function myFunction() {
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("myBtn");
+
+if (dots.style.display === "none") {
+dots.style.display = "inline";
+btnText.innerHTML = "Read more";
+moreText.style.display = "none";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "Read less";
+moreText.style.display = "inline";
+}
+} 
+    </script>
     <div class=mapa1 id="mapa">
         <h2>Mapa Amsterdamu</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92759.06607876728!2d4.897216111556182!3d52.34278194554859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Holandia!5e0!3m2!1spl!2spl!4v1591807076143!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -58,7 +76,7 @@
             </li>
         </ul>
     </div>
-    <div id="formularz">
+    <div class=formularz id="formularz">
         <h2>Ankieta</h2>
         Pojechałbyś do Amsterdamu?<br>
             <input type=radio id=tak name=opinia value=tak checked>
